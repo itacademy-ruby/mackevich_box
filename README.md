@@ -1,4 +1,4 @@
 mackevich_box
 =============
 
-MusicalBox.
+MusicBox.
