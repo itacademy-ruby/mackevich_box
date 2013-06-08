@@ -46,17 +46,10 @@ class Musicbox
      end
    end
 
-   def search 
-     @song_name = gets.chomp
-     if @songs.include?(@song_name)
-       puts "#{@song_name} is present in the tracklist"
-       @song_found = true
-     else 
-       puts "A track is not listed"  
-     end
-   end
 
   def play_music
+    def search
+    def load_song
     if @song_found 
     puts "#{@song_name}" + " is played now :)"
     end
@@ -67,6 +60,18 @@ class Musicbox
       puts "#{@song_name}" + " is loading"
     end
   end
+  
+  private
+  
+ def search 
+     @song_name = gets.chomp
+     if @songs.include?(@song_name)
+       puts "#{@song_name} is present in the tracklist"
+       @song_found = true
+     else 
+       puts "A track is not listed"  
+     end
+   end
 
 end
 
@@ -77,5 +82,4 @@ box.status
 box.track_list
 box.pay
 box.search
-box. load_song
 box.play_music
