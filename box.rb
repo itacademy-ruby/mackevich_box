@@ -36,7 +36,7 @@ class Musicbox
     end
 
    def pay 
-     puts "The cost of one track = 5$.Please,enter money"
+     puts "The cost of one track=" + "#{@song_cost}$.Please,enter money"
      @income_money = gets.chomp.to_i
      if @income_money < @song_cost
        puts "Not enough money"
